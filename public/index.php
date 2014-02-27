@@ -1,6 +1,8 @@
 <?php
 require '../vendor/autoload.php';
 
+require '../config/database.php';
+
 //Slim app configuration
 $app = new \Slim\Slim(array(
 	'templates.path' => '../app/views',
@@ -12,7 +14,7 @@ $app = new \Slim\Slim(array(
 $view = $app->view();
 $view->parserOptions = array(
 	'charset' => 'utf-8',
-	'cache' => realpath('../app/views/cache'),
+	'cache' => realpath('../app/cache'),
 	'auto_reload' => true,
 	'strict_variables' => false,
 	'autoescape' => true
