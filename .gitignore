@@ -1,4 +1,3 @@
-.project
-composer.lock
-vendor/*
-app/cache
+server/vendor/*
+server/app/cache
+server/config/database.php
