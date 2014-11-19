@@ -1,7 +1,9 @@
 {
     "require": {
         "slim/slim": "2.*",
-        "j4mie/idiorm": "1.4.*",
-        "j4mie/paris": "1.4.*"
+        "illuminate/database": "*"
+    },
+    "autoload": {
+        "psr-0": {"Model": "app/"}
     }
 }
