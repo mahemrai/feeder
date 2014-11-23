@@ -1,4 +1,4 @@
-server/vendor/*
-server/app/cache
-server/config/database.php
-server/database/feeder.db
+api/vendor/*
+api/app/cache
+api/config/database.php
+api/database/feeder.db
