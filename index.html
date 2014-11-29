@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Feeder</title>
+    <link rel="stylesheet" href="app/css/feeder.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-3">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1>Feeds</h1>
+                        <form role="form">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input name="feed" type="text" class="form-control"/>
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button">Add</button>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12" id="feedList">
+                        <script id="feedTemplate" type="text/template">
+                            <ul>
+                                <li><%= title %></li>
+                            </ul>
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6" id="postList">
+                <h1>Articles</h1>
+                <script id="postTemplate" type="text/template">
+                    <ul>
+                        <li><%= title %></li>
+                    </ul>
+                </script>
+            </div>
+            <div class="col-xs-3">
+                <div class="row">
+                    <div class="col-xs-12" id="favouriteList">
+                        <h1>Favourites</h1>
+                        <script id="favouriteTemplate" type="text/template">
+                            <ul>
+                                <li><%= title %></li>
+                            </ul>
+                        </script>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12" id="unreadList">
+                        <h1>Unread</h1>
+                        <script id="unreadTemplate" type="text/template">
+                            <ul>
+                                <li><%= title %></li>
+                            </ul>
+                        </script>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script src="app/js/lib/jquery-1.11.1.min.js"></script>
+    <script src="app/js/lib/underscore.js"></script>
+    <script src="app/js/lib/backbone.js"></script>
+    <script src="app/js/models/feed.js"></script>
+    <script src="app/js/models/post.js"></script>
+    <script src="app/js/collections/feedList.js"></script>
+    <script src="app/js/collections/postList.js"></script>
+    <script src="app/js/collections/favouriteList.js"></script>
+    <script src="app/js/collections/unreadList.js"></script>
+    <script src="app/js/views/feed.js"></script>
+    <script src="app/js/views/feedListView.js"></script>
+    <script src="app/js/views/post.js"></script>
+    <script src="app/js/views/postListView.js"></script>
+    <script src="app/js/views/favourite.js"></script>
+    <script src="app/js/views/favouriteListView.js"></script>
+    <script src="app/js/views/unread.js"></script>
+    <script src="app/js/views/unreadListView.js"></script>
+    <script src="app/js/app.js"></script>
+</body>
+</html>
